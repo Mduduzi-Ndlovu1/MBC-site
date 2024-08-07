@@ -29,8 +29,11 @@ import {
     M7_series, 
     Z2_series, 
     T1_series, 
-    T6_series 
+    T6_series ,
+    frontImgs
 } from '../assets/Gas water heaters';
+
+
 
 export const categories = [
     {
@@ -86,8 +89,12 @@ export const gasWaterHeaters = [
     T6_series
 ];
 
+
+
 export default {
     navLinks,
     categories,
-    gasWaterHeaters
+    gasWaterHeaters,
+    frontImgs
+
 }

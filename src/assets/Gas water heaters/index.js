@@ -172,3 +172,59 @@ export const T1_series = {
 export const T6_series = {
     T6_front
 }
+
+export const frontImgs = [
+    {
+        name: 'Q6S',
+        imageSrc: Q6S_Front
+    },
+    {
+        name: 'E3B',
+        imageSrc: E3B_front
+    },
+    {
+        name: 'K3B',
+        imageSrc: K3B_front
+    },
+    {
+        name: 'K3SB',
+        imageSrc: K3SB_front
+    },
+    {
+        name: 'E5',
+        imageSrc: E5_front
+    },
+    {
+        name: 'E3',
+        imageSrc: E3_front
+    },
+    {
+        name: 'K3',
+        imageSrc: K3_front
+    },
+    {
+        name: 'K3S',
+        imageSrc: K3S_front_Silver
+    },
+    {
+        name: 'KM5',
+        imageSrc: KM5_front
+    },
+    {
+        name: 'M7',
+        imageSrc: M7_front
+    },
+    {
+        name: 'Z2',
+        imageSrc: Z2_front
+    },
+    {
+        name: 'T1',
+        imageSrc: T1_front
+    },
+    {
+        name: 'T6',
+        imageSrc: T6_front
+    }
+       
+]
