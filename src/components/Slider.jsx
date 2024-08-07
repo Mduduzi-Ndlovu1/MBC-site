@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import './Slider.css';
@@ -12,8 +13,8 @@ const Slider = ({ slides = [] }) => {
   return (
     <Swiper
       modules={[Navigation, Pagination, Autoplay]}
-      spaceBetween={10}
-      slidesPerView={4}
+      spaceBetween={5}
+      slidesPerView={3}
       navigation
       pagination={{ clickable: true }}
       autoplay={{ delay: 3000, disableOnInteraction: false }}
@@ -43,7 +44,10 @@ const Slider = ({ slides = [] }) => {
     >
       {slides.map((slide, index) => (
         <SwiperSlide key={index}>
-          <img src={slide} alt={`Slide ${index + 1}`} className="slide_image " />
+          <Link to={"/products"}>
+            <img src={slide} alt={`Slide ${index + 1}`} className="slide_image " />
+
+          </Link>
         </SwiperSlide>
       ))}
     </Swiper>
