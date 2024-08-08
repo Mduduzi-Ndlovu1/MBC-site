@@ -19,7 +19,7 @@ const Navbar = () => {
       easing: 'ease-in-out',
       origin: 'top',
       interval: 100,
-      
+      reset: false,
     });
   }, []);
 

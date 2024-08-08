@@ -15,7 +15,7 @@ const Home = () => {
       easing: 'ease-in-out',
       origin: 'bottom',
       interval: 200,
-      reset: true,
+      reset: false,
     });
   }, []);
 
@@ -41,6 +41,15 @@ const Home = () => {
           <Slider slides={slides} />
         </div>
       </header>
+
+      <main>
+        <section className='flex mx-4 gap-7 flex-row'>
+          <div className=''>
+            <h3>Explore Our Range of Gas Water Heaters</h3>
+          </div>
+          <div className=''></div>
+        </section>
+      </main>
     </>
   );
 }

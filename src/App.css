@@ -28,9 +28,11 @@ body {
     -webkit-backdrop-filter: blur(10px);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.3);
-    position: relative;
-    margin: 5px;
-    z-index: 999;
+    position: fixed; /* Make the navbar fixed */
+    top: 0; /* Stick the navbar to the top */
+    width: 100%; /* Ensure the navbar spans the full width */
+    z-index: 999; /* Ensure the navbar is above other content */
+    margin: 0; /* Remove margin to avoid unnecessary gaps */
 }
 
 .nav_logo {
@@ -165,9 +167,10 @@ body {
 /* Home section */
 
 .home_header {
+    margin-top: 50px;
     position: relative;
     width: 100%;
-    height: auto;
+    height: 100svh;
     overflow: hidden;
 }
 
