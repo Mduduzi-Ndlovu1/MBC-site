@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import data from '../utils';
 import Button from './Button';
+import ScrollReveal from 'scrollreveal';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,22 +12,35 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  useEffect(() => {
+    ScrollReveal().reveal('.reveal', {
+      distance: '50px',
+      duration: 1000,
+      easing: 'ease-in-out',
+      origin: 'top',
+      interval: 100,
+      
+    });
+  }, []);
+
   return (
-    <nav className="navbar_container">
-      <div className="nav_logo">
+    <nav className="navbar_container reveal">
+      <div className="nav_logo reveal">
         <Link to="/">
           <img src="src/assets/logo/Logo_Black-removebg-preview.png" alt="Logo" />
         </Link>
       </div>
-      <div className={`nav_links ${isOpen ? 'open' : ''}`}>
+      <div className={`nav_links ${isOpen ? 'open' : ''} reveal`}>
         {data.navLinks.map((link) => (
           <Link key={link.name} to={link.path} className="link" onClick={toggleMenu}>
             {link.name}
           </Link>
         ))}
       </div>
-      <Button name="Request Quote" path="/contact" classname={"btn"}/>
-      <button className="mobile_menu_button px-5" onClick={toggleMenu}>
+      <div className="reveal">
+        <Button name="Request Quote" path="/contact" classname={"btn"} />
+      </div>
+      <button className="mobile_menu_button px-5 reveal" onClick={toggleMenu}>
         {isOpen ? <FaTimes className="menu_icon" /> : <FaBars className="menu_icon" />}
       </button>
     </nav>

@@ -13,22 +13,24 @@ const Slider = ({ slides = [] }) => {
     <Swiper
       modules={[Navigation, Pagination, Autoplay]}
       spaceBetween={10}
-      slidesPerView={1} // Default to 1 slide per view
+      slidesPerView={2} // Default to 2 slides per view
       navigation
       pagination={{ clickable: true }}
-      autoplay={{ delay: 3000, disableOnInteraction: false }}
+      autoplay={{ 
+        delay: 1000, 
+        disableOnInteraction: false 
+      }}
+      speed={4000}
+      loop={true} // Enable looping
       breakpoints={{
-        // when window width is >= 640px
         640: {
           slidesPerView: 2,
           spaceBetween: 20,
         },
-        // when window width is >= 768px
         768: {
           slidesPerView: 3,
           spaceBetween: 30,
         },
-        // when window width is >= 1024px
         1024: {
           slidesPerView: 4,
           spaceBetween: 40,
