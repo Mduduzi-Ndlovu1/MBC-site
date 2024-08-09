@@ -64,8 +64,8 @@ const Home = React.memo(() => {
       <main>
       <section >
         <div className='section__header'>
-        <h3 className='section__title'>Featured Products:</h3>
-          <div className='button__container'>
+        <h3 className='section__title reveal'>Featured Products:</h3>
+          <div className='button__container reveal'>
             <Button name={"Force Flue"} classname={"btn-clear"} onClick={() => handleFeatureClick('Force Flue')} />
             <Button name={"Natural Flue"} classname={"btn-clear"} onClick={() => handleFeatureClick('Digital')} />
             <Button name={"External"} classname={"btn-clear"} onClick={() => handleFeatureClick('External')} />
@@ -75,10 +75,10 @@ const Home = React.memo(() => {
         <div className='section__content'>
           {selectedImage && (
             <>
-            <div className='header__img'>
+            <div className='header__img reveal'>
               <img src={selectedImage.imageSrc} alt={selectedImage.name} className='w-full h-[400px] object-contain ' loading="lazy" />
             </div>
-            <div className='header__desc'>
+            <div className='header__desc reveal'>
               <p className='mb-5'>{selectedImage.desc}</p>
               <Button name={"Learn More"} classname={"btn-clear"} path={'./products'} />
             </div>
@@ -87,7 +87,7 @@ const Home = React.memo(() => {
         </div>
       </section>
           
-      <section className="category-section">
+      <section className="category-section reveal">
       <Swiper
         spaceBetween={10}
         slidesPerView={1}
@@ -109,7 +109,7 @@ const Home = React.memo(() => {
         }}
       >
         {data.categoryImages.map((category) => (
-          <SwiperSlide key={category.id} className="category-card">
+          <SwiperSlide key={category.id} className="category-card reveal">
             <div className="category-card-content">
               <img src={category.imageSrc} alt={category.desc} className="category-image" />
               <p className="category-desc">{category.desc}</p>
