@@ -1,12 +1,12 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { memo } from 'react';
+import { Link } from 'react-router-dom';
 
-const Button = ({name, path, classname}) => {
+const Button = memo(({ name, path, classname }) => {
   return (
-    <Link to={path}>
-        <button className={classname}>{name}</button>
+    <Link to={path} aria-label={name}>
+      <button className={classname}>{name}</button>
     </Link>
-  )
-}
+  );
+});
 
-export default Button
+export default Button;

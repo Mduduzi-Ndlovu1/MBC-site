@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import './Slider.css';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
-const Slider = ({ slides = [] }) => {
+const Slider = memo(({ slides = [] }) => {
   if (!slides.length) {
     return <div>No slides available</div>;
   }
@@ -17,11 +17,11 @@ const Slider = ({ slides = [] }) => {
       navigation
       pagination={{ clickable: true }}
       autoplay={{ 
-        delay: 1000, 
+        delay: 3000, 
         disableOnInteraction: false 
       }}
-      speed={4000}
-      loop={true} // Enable looping
+      speed={2000} // Adjusted for smoother transitions
+      loop={true}
       breakpoints={{
         640: {
           slidesPerView: 2,
@@ -40,11 +40,16 @@ const Slider = ({ slides = [] }) => {
     >
       {slides.map((slide, index) => (
         <SwiperSlide key={index}>
-          <img src={slide} alt={`Slide ${index + 1}`} className="slide_image" />
+          <img 
+            src={slide} 
+            alt={`Slide ${index + 1}`} 
+            className="slide_image" 
+            loading="lazy" // Lazy load images
+          />
         </SwiperSlide>
       ))}
     </Swiper>
   );
-};
+});
 
 export default Slider;

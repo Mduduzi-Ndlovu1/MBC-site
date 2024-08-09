@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, memo } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import data from '../utils';
 import Button from './Button';
 import ScrollReveal from 'scrollreveal';
 
-const Navbar = () => {
+const Navbar = memo(() => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -24,10 +24,16 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="navbar_container reveal">
+    <nav className="navbar_container reveal" role="navigation">
       <div className="nav_logo reveal">
-        <Link to="/">
-          <img src="src/assets/logo/Logo_Black-removebg-preview.png" alt="Logo" />
+        <Link to="/" aria-label="Home">
+          <img 
+            src="src/assets/logo/Logo_Black-removebg-preview.png" 
+            alt="Company Logo" 
+            width="160" 
+            height="100" 
+            loading="lazy" // Lazy load logo
+          />
         </Link>
       </div>
       <div className={`nav_links ${isOpen ? 'open' : ''} reveal`}>
@@ -40,11 +46,15 @@ const Navbar = () => {
       <div className="reveal">
         <Button name="Request Quote" path="/contact" classname={"btn"} />
       </div>
-      <button className="mobile_menu_button px-5 reveal" onClick={toggleMenu}>
+      <button 
+        className="mobile_menu_button px-5 reveal" 
+        onClick={toggleMenu} 
+        aria-label="Toggle Menu"
+      >
         {isOpen ? <FaTimes className="menu_icon" /> : <FaBars className="menu_icon" />}
       </button>
     </nav>
   );
-};
+});
 
 export default Navbar;
