@@ -30,7 +30,8 @@ import {
     Z2_series, 
     T1_series, 
     T6_series ,
-    frontImgs
+    frontImgs,
+    headerImgs
 } from '../assets/Gas water heaters';
 
 
@@ -95,6 +96,7 @@ export default {
     navLinks,
     categories,
     gasWaterHeaters,
-    frontImgs
+    frontImgs,
+    headerImgs
 
 }

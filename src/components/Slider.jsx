@@ -13,7 +13,7 @@ const Slider = memo(({ slides = [] }) => {
     <Swiper
       modules={[Navigation, Pagination, Autoplay]}
       spaceBetween={10}
-      slidesPerView={2} // Default to 2 slides per view
+      slidesPerView={1} // Default to 1 slide per view
       navigation
       pagination={{ clickable: true }}
       autoplay={{ 

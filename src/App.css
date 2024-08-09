@@ -122,7 +122,9 @@ body {
 }
 
 @media (max-width: 768px) {
-    
+    .navbar_container {
+        width: 100dvw;
+    }
     .nav_links {
         margin-top: -1px;
         flex-direction: column;

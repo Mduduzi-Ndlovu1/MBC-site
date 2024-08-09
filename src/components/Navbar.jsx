@@ -24,7 +24,7 @@ const Navbar = memo(() => {
   }, []);
 
   return (
-    <nav className="navbar_container reveal" role="navigation">
+    <nav className="navbar_container reveal">
       <div className="nav_logo reveal">
         <Link to="/" aria-label="Home">
           <img 
@@ -32,7 +32,7 @@ const Navbar = memo(() => {
             alt="Company Logo" 
             width="160" 
             height="100" 
-            loading="lazy" // Lazy load logo
+            loading="lazy" 
           />
         </Link>
       </div>
@@ -43,11 +43,11 @@ const Navbar = memo(() => {
           </Link>
         ))}
       </div>
-      <div className="reveal">
+      <div className="reveal hidden md:block">
         <Button name="Request Quote" path="/contact" classname={"btn"} />
       </div>
       <button 
-        className="mobile_menu_button px-5 reveal" 
+        className="mobile_menu_button md:hidden px-5 reveal" 
         onClick={toggleMenu} 
         aria-label="Toggle Menu"
       >

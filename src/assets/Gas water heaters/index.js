@@ -4,7 +4,7 @@ import Q6S_bottom from './Balance Flue/CE Low NOx/Q6S bottom.jpeg';
 import Q6S_top from './Balance Flue/CE Low NOx/Q6S top.jpeg';
 import Q6S_right from './Balance Flue/CE Low NOx/Q6S right.jpeg';
 import Q6S_left from './Balance Flue/CE Low NOx/Q6S left.jpeg';
-
+ 
 // Imports for Balance Flue - Digital
 import E3B_front from './Balance Flue/Digital/E3B series/E3B front.jpeg';
 import E3B_bottom from './Balance Flue/Digital/E3B series/E3B bottom.jpeg';
@@ -227,4 +227,26 @@ export const frontImgs = [
         imageSrc: T6_front
     }
        
+]
+
+import K3S_header from './Force Flue/Digital/K3S series/K3S header.jpg';
+import E3B_header from './Balance Flue/Digital/E3B series/E3B header.jpg';
+import E5_header from './External/E5 Series/E5 Header.png';
+
+export const headerImgs = [
+    {
+        name: 'Force Flue',
+        imageSrc: K3S_header,
+        desc: "K3S Series Inverter Digital Force Flue Gas Water Heater"
+    },
+    {
+        name: 'Digital',
+        imageSrc: E3B_header,
+        desc: "E3B Series Digital Gas Water Heater"
+    },
+    {
+        name: 'External',
+        imageSrc: E5_header,
+        desc: "E5 Series External Gas Water Heater"
+    }
 ]

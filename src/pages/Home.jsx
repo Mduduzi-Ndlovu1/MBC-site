@@ -1,11 +1,23 @@
-import React, { useEffect, useCallback } from 'react';
+import React, { useEffect, useCallback, useState } from 'react';
 import Navbar from '../components/Navbar';
 import Button from '../components/Button';
 import data from '../utils/index';
 import Slider from '../components/Slider';
 import ScrollReveal from 'scrollreveal';
 
+
 const Home = React.memo(() => {
+  const [selectedFeature, setSelectedFeature] = useState('Digital');
+
+  const handleFeatureClick = (featureName) => {
+    setSelectedFeature(featureName);
+  };
+
+  const selectedImage = data.headerImgs.find((img) => img.name === selectedFeature);
+
+
+
+
   const slides = data.frontImgs.map((slide) => slide.imageSrc);
 
   useEffect(() => {
@@ -47,12 +59,34 @@ const Home = React.memo(() => {
       </header>
 
       <main>
-        <section className='flex mx-4 gap-7 flex-row'>
-          <div className=''>
-            <h3>Explore Our Range of Gas Water Heaters</h3>
+      <section className='mx-4 gap-7 flex-row mt-10'>
+        <div className='w-full flex flex-col md:flex-row justify-between items-center px-6 md:px-9 reveal border-b-2 border-y-silver'>
+        <h3 className='text-2xl md:text-3xl lg:text-4xl font-bold'>Featured Products:</h3>
+          <div className='mt-4 md:mt-0 flex flex-wrap gap-4 md:gap-6 mb-7'>
+            <Button name={"Force Flue"} classname={"btn-clear"} onClick={() => handleFeatureClick('Force Flue')} />
+            <Button name={"Natural Flue"} classname={"btn-clear"} onClick={() => handleFeatureClick('Digital')} />
+            <Button name={"External"} classname={"btn-clear"} onClick={() => handleFeatureClick('External')} />
           </div>
-          <div className=''></div>
-        </section>
+        </div>
+
+        <div className='mt-10 flex justify-evenly items-center gap-9'>
+          {selectedImage && (
+            <>
+            <div className=''>
+              <img src={selectedImage.imageSrc} alt={selectedImage.name} className='w-full h-[400px] object-contain ' loading="lazy" />
+            </div>
+            <div className='px-10'>
+              <p className='mb-5'>{selectedImage.desc}</p>
+              <Button name={"Natural Flue"} classname={"btn-clear"} path={'./products'} />
+            </div>
+            </>
+          )}
+        </div>
+      </section>
+
+      <section>
+        
+      </section>
       </main>
     </>
   );
