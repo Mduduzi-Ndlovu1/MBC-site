@@ -4,6 +4,7 @@ import Button from '../components/Button';
 import data from '../utils/index';
 import Slider from '../components/Slider';
 import ScrollReveal from 'scrollreveal';
+import '../pages/home.css'
 
 
 const Home = React.memo(() => {
@@ -14,9 +15,6 @@ const Home = React.memo(() => {
   };
 
   const selectedImage = data.headerImgs.find((img) => img.name === selectedFeature);
-
-
-
 
   const slides = data.frontImgs.map((slide) => slide.imageSrc);
 
@@ -59,25 +57,25 @@ const Home = React.memo(() => {
       </header>
 
       <main>
-      <section className='mx-4 gap-7 flex-row mt-10'>
-        <div className='w-full flex flex-col md:flex-row justify-between items-center px-6 md:px-9 reveal border-b-2 border-y-silver'>
-        <h3 className='text-2xl md:text-3xl lg:text-4xl font-bold'>Featured Products:</h3>
-          <div className='mt-4 md:mt-0 flex flex-wrap gap-4 md:gap-6 mb-7'>
+      <section >
+        <div className='section__header'>
+        <h3 className='section__title'>Featured Products:</h3>
+          <div className='button__container'>
             <Button name={"Force Flue"} classname={"btn-clear"} onClick={() => handleFeatureClick('Force Flue')} />
             <Button name={"Natural Flue"} classname={"btn-clear"} onClick={() => handleFeatureClick('Digital')} />
             <Button name={"External"} classname={"btn-clear"} onClick={() => handleFeatureClick('External')} />
           </div>
         </div>
 
-        <div className='mt-10 flex justify-evenly items-center gap-9'>
+        <div className='section__content'>
           {selectedImage && (
             <>
-            <div className=''>
+            <div className='header__img'>
               <img src={selectedImage.imageSrc} alt={selectedImage.name} className='w-full h-[400px] object-contain ' loading="lazy" />
             </div>
-            <div className='px-10'>
+            <div className='header__desc'>
               <p className='mb-5'>{selectedImage.desc}</p>
-              <Button name={"Natural Flue"} classname={"btn-clear"} path={'./products'} />
+              <Button name={"Learn More"} classname={"btn-clear"} path={'./products'} />
             </div>
             </>
           )}
@@ -85,7 +83,7 @@ const Home = React.memo(() => {
       </section>
 
       <section>
-        
+
       </section>
       </main>
     </>

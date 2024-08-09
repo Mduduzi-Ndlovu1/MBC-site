@@ -32,11 +32,11 @@ const Slider = memo(({ slides = [] }) => {
           spaceBetween: 30,
         },
         1024: {
-          slidesPerView: 4,
+          slidesPerView: 5,
           spaceBetween: 40,
         },
       }}
-      className='mt-8'
+      className='my-5'
     >
       {slides.map((slide, index) => (
         <SwiperSlide key={index}>
