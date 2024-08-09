@@ -250,3 +250,30 @@ export const headerImgs = [
         desc: "E5 Series External Gas Water Heater"
     }
 ]
+
+export const categoryImages = [
+    {
+        id: 'Balance Flue',
+        desc: 'K3B Series Digital Balance Flue Gas Water Heater',
+        imageSrc: K3B_front,
+        
+    },
+    {
+        id: 'External',
+        desc: 'E5 Series External Gas Water Heater',
+        imageSrc: E5_front,
+        
+    },
+    {
+        id: 'Force Flue',
+        desc: 'K3 Series Digital Force Flue Gas Water Heater',
+        imageSrc: K3_front,
+        
+    },
+    {
+        id: 'Natural Flue',
+        desc: 'T1 Series Natural Flue Gas Water Heater',
+        imageSrc: T1_front,      
+    },
+    
+]

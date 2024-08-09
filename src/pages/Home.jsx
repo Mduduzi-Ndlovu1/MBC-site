@@ -6,6 +6,11 @@ import Slider from '../components/Slider';
 import ScrollReveal from 'scrollreveal';
 import '../pages/home.css'
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import '../components/Slider.css';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+
 
 const Home = React.memo(() => {
   const [selectedFeature, setSelectedFeature] = useState('Digital');
@@ -81,10 +86,41 @@ const Home = React.memo(() => {
           )}
         </div>
       </section>
+          
+      <section className="category-section">
+      <Swiper
+        spaceBetween={10}
+        slidesPerView={1}
+        pagination={{ clickable: true }}
+        modules={[Pagination]}
+        breakpoints={{
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+        }}
+      >
+        {data.categoryImages.map((category) => (
+          <SwiperSlide key={category.id} className="category-card">
+            <div className="category-card-content">
+              <img src={category.imageSrc} alt={category.desc} className="category-image" />
+              <p className="category-desc">{category.desc}</p>
 
-      <section>
-
-      </section>
+              <Button name={"Learn More"} classname={"btn-clear"} path={'./products'} />
+            </div>
+            
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </section>
       </main>
     </>
   );
