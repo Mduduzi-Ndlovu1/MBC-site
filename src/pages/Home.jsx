@@ -121,6 +121,38 @@ const Home = React.memo(() => {
         ))}
       </Swiper>
     </section>
+
+    <section className='w-full mt-10 flex p-10 gap-8'>
+      <div className="flex-1">
+        <article>
+          <h2 className='text-2xl font-bold py-5'>Explore Our Range of Gas Water Geysers</h2>
+          <p>At our company, we have a rich history and a strong commitment to our mission and values. We strive to provide the best products and services to our customers </p>
+
+          <div className='flex py-5'>
+            <div>
+              {/* box icon */}
+              <h3 className=''> Reliable</h3>
+              <p>Experience uninterrupted hot water supply with our range of reliable gas water heaters.</p>
+            </div>
+            <div>
+              {/* box icon */}
+              <h3>Efficient</h3>
+              <p>Save on evergy bills with our energy effcient Gas water Geysers that provide instant hot water.</p>
+            </div>
+
+          </div>
+            <div>
+              <Button name={"Learn More"} classname={"btn-clear"} path={'./about'} />
+
+              <Button name={"Request Quote"} classname={"btn"} path={'./products'} />
+            </div>
+        </article>
+
+      </div>
+      <div className='flex-1 flex justify-center items-center'>
+        <img src="src\assets\logo\logo bg-stuff.jpg" alt="logo" className="image reveal" />
+      </div>
+    </section>
       </main>
     </>
   );

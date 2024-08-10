@@ -32,7 +32,7 @@ const Slider = memo(({ slides = [] }) => {
           spaceBetween: 30,
         },
         1024: {
-          slidesPerView: 5,
+          slidesPerView: 4,
           spaceBetween: 40,
         },
       }}
