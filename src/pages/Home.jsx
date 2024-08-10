@@ -5,6 +5,7 @@ import data from '../utils/index';
 import Slider from '../components/Slider';
 import ScrollReveal from 'scrollreveal';
 import '../pages/home.css'
+import { BsBox } from "react-icons/bs";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -122,26 +123,26 @@ const Home = React.memo(() => {
       </Swiper>
     </section>
 
-    <section className='w-full mt-10 flex p-10 gap-8'>
+    <section className='w-full mt-10 flex p-10 gap-8 '>
       <div className="flex-1">
         <article>
-          <h2 className='text-2xl font-bold py-5'>Explore Our Range of Gas Water Geysers</h2>
-          <p>At our company, we have a rich history and a strong commitment to our mission and values. We strive to provide the best products and services to our customers </p>
+          <h2 className='text-2xl font-bold py-5 text-gray-300 reveal'>Explore Our Range of Gas Water Geysers</h2>
+          <p className='reveal'>At our company, we have a rich history and a strong commitment to our mission and values. We strive to provide the best products and services to our customers </p>
 
           <div className='flex py-5'>
             <div>
-              {/* box icon */}
-              <h3 className=''> Reliable</h3>
-              <p>Experience uninterrupted hot water supply with our range of reliable gas water heaters.</p>
+              <BsBox size={40} className='mb-3 reveal'/>
+              <h3 className='font-bold text-xl mb-3 reveal'> Reliable</h3>
+              <p className='reveal'>Experience uninterrupted hot water supply with our range of reliable gas water heaters.</p>
             </div>
             <div>
-              {/* box icon */}
-              <h3>Efficient</h3>
-              <p>Save on evergy bills with our energy effcient Gas water Geysers that provide instant hot water.</p>
+              <BsBox size={40} className='mb-3 reveal'/>
+              <h3 className='font-bold text-xl mb-3 reveal'>Efficient</h3>
+              <p className='reveal'>Save on evergy bills with our energy effcient Gas water Geysers that provide instant hot water.</p>
             </div>
 
           </div>
-            <div>
+            <div className='flex gap-5 reveal' >
               <Button name={"Learn More"} classname={"btn-clear"} path={'./about'} />
 
               <Button name={"Request Quote"} classname={"btn"} path={'./products'} />
@@ -150,9 +151,116 @@ const Home = React.memo(() => {
 
       </div>
       <div className='flex-1 flex justify-center items-center'>
-        <img src="src\assets\logo\logo bg-stuff.jpg" alt="logo" className="image reveal" />
+        <img src="src\assets\logo\logo bg-stuff.jpg" alt="logo" className="image reveal rounded-lg" />
       </div>
     </section>
+
+    <section className="w-full mt-10 flex flex-col md:flex-row p-5 md:p-10 gap-8">
+        {/* Left side - Contact Form */}
+      <div className="flex-1">
+          <h2 className="text-2xl font-bold py-5 text-gray-300 reveal">Contact Us</h2>
+          <p className="reveal py-5">
+            For any <span className="text-red-500">inquiries</span> or <span className="text-red-500">Quotation</span>, please reach out to us.
+          </p>
+
+          <div>
+            <form className="space-y-6 reveal">
+              <div className="w-full flex flex-col md:flex-row gap-5">
+                <div className="w-full">
+                  <label htmlFor="firstName" className="block text-sm font-medium text-gray-300">
+                    First Name
+                  </label>
+                  <input
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    required
+                    className="mt-1 block w-full px-3 py-2 bg-gray-800 border border-gray-600 rounded-md shadow-sm text-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500"
+                  />
+                </div>
+
+                <div className="w-full">
+                  <label htmlFor="lastName" className="block text-sm font-medium text-gray-300">
+                    Last Name
+                  </label>
+                  <input
+                    type="text"
+                    id="lastName"
+                    name="lastName"
+                    required
+                    className="mt-1 block w-full px-3 py-2 bg-gray-800 border border-gray-600 rounded-md shadow-sm text-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500"
+                  />
+                </div>
+              </div>
+
+              <div className="w-full">
+                <label htmlFor="email" className="block text-sm font-medium text-gray-300">
+                  Email Address
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  className="mt-1 block w-full px-3 py-2 bg-gray-800 border border-gray-600 rounded-md shadow-sm text-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500"
+                />
+              </div>
+
+              <div className="w-full">
+                <label htmlFor="subject" className="block text-sm font-medium text-gray-300">
+                  Subject
+                </label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  required
+                  className="mt-1 block w-full px-3 py-2 bg-gray-800 border border-gray-600 rounded-md shadow-sm text-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500"
+                />
+              </div>
+
+              <div className="w-full">
+                <label htmlFor="message" className="block text-sm font-medium text-gray-300">
+                  Message
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                  className="mt-1 block w-full px-3 py-2 bg-gray-800 border border-gray-600 rounded-md shadow-sm text-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500"
+                ></textarea>
+              </div>
+
+              <div className="w-full">
+                <button
+                  type="submit"
+                  className="w-full px-4 py-2 bg-red-500 text-white font-medium rounded-md shadow-sm hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+      </div>
+
+        {/* Right side - Google Maps */}
+      <div className="flex-1">
+        <div className="h-full w-full">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509104!2d144.9537353159047!3d-37.81627977975179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f1502e3d%3A0x5045675218ce6e0!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2s!4v1614480433193!5m2!1sen!2s"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            title="Google Maps"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+
       </main>
     </>
   );
