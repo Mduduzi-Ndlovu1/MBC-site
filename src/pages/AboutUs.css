@@ -1,0 +1,173 @@
+/* AboutUs.css */
+
+/* General Styles */
+.about-us-container {
+    font-family: 'Arial', sans-serif;
+    color: #adadad;
+  }
+  
+  .intro-section {
+    margin-top: 6rem;
+    padding: 2rem;
+    text-align: center;
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .intro-section h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #afafaf;
+  }
+  
+  .intro-section .highlight {
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, rgb(112, 0, 0) 0%, rgb(255, 56, 56) 57%, rgb(114, 19, 19) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .intro-section > p {
+    padding: 0 15rem;
+  }
+  
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+  }
+  
+  .hero-content {
+    flex: 1;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, rgb(151, 0, 0) 0%, rgb(255, 56, 56) 57%, rgb(114, 19, 19) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+  }
+  
+  .hero-text p {
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .hero-image-container {
+    flex: 1;
+  }
+  
+  .hero-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .mission-values {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .mission-values-item {
+    flex: 1;
+    margin: 0 1rem;
+    text-align: center;
+  }
+  
+  .mission-values-item h2 {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .mission-values-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .team {
+    padding: 2rem;
+    background-color: #f7f7f7;
+  }
+  
+  .team h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .team-member {
+    flex: 1;
+    max-width: 250px;
+    text-align: center;
+  }
+  
+  .team-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  .subscription {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .subscription h3 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  .subscription-form {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .subscription-input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+  }
+  
+  .subscription-button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+  
+  .subscription-button:hover {
+    background-color: #0056b3;
+  }
+  
