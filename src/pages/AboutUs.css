@@ -2,7 +2,6 @@
 
 /* General Styles */
 .about-us-container {
-    font-family: 'Arial', sans-serif;
     color: #adadad;
   }
   
@@ -74,11 +73,39 @@
   
   .hero-image-container {
     flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.1rem;
+    background: #004c63a4; /* Light background to contrast with the image */
+    border-radius: 12px; /* Rounded corners for the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   }
   
   .hero-image {
-    width: 100%;
+    max-width: 100%;
     height: auto;
+    border-radius: 8px; /* Rounded corners for the image */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+    
+  }
+
+  .hero-image-container:hover .hero-image {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2); /* Enhanced shadow on hover */
+  }
+
+  /* Optional: Media queries for responsive adjustments */
+@media (max-width: 768px) {
+    .hero-image-container {
+      padding: 0.5rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero-image {
+      width: 90%;
+    }
   }
   
   .mission-values {
@@ -169,5 +196,35 @@
   
   .subscription-button:hover {
     background-color: #0056b3;
+  }
+
+  /* Media queries for responsive adjustments */
+@media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .hero-image-container {
+      padding: 0.5rem;
+    }
+  
+    .intro-section > p {
+      padding: 0 10rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-image {
+      width: 90%;
+    }
+  
+    .intro-section > p {
+      padding: 0 5rem;
+    }
+  
+    .intro-section h2 {
+      font-size: 2rem;
+    }
   }
   

@@ -49,13 +49,13 @@ const AboutUs = () => {
             </div>
           </div>
           <div className="hero-image-container reveal">
-            <img src="src/assets/logo/logo bg-stuff.jpg" alt="Hero" className="hero-image" />
+            <img src="src\assets\mission.jpg" alt="Hero" className="hero-image reveal" />
           </div>
         </section>
         
         <section className="hero">
         <div className="hero-image-container">
-            <img src="src/assets/logo/logo bg-stuff.jpg" alt="Hero" className="hero-image reveal" />
+            <img src="src\assets\vission.jpg" alt="Hero" className="hero-image reveal" />
           </div>
           <div className="hero-content">
             <div className="hero-text">
