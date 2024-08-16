@@ -6,14 +6,18 @@
   }
   
   .intro-section {
-    margin-top: 6rem;
-    padding: 2rem;
+    margin-top: 3rem;
     text-align: center;
     height: 100svh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url("src/assets/logo/logo color.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #adadad;
     
   }
   
@@ -33,7 +37,7 @@
   }
 
   .intro-section > p {
-    padding: 0 15rem;
+    padding: 0 2rem;
     margin-bottom: 0.5rem;
   }
   
@@ -97,6 +101,16 @@
 
   /* Optional: Media queries for responsive adjustments */
 @media (max-width: 768px) {
+  .intro-section .highlight{
+    font-size: 2rem;
+  }
+
+  .intro-section h2{
+    font-size: 1.5rem;
+  }
+    .intro-section > p{
+      font-size: 0.8rem;
+    }
     .hero-image-container {
       padding: 0.5rem;
     }
@@ -106,6 +120,17 @@
     .hero-image {
       width: 90%;
     }
+    .intro-section .highlight{
+      font-size: 2rem;
+    }
+  
+    .intro-section h2{
+      font-size: 1.5rem;
+      padding: 0 2rem;
+    }
+      .intro-section > p{
+        font-size: 0.8rem;
+      }
   }
   
   .mission-values {

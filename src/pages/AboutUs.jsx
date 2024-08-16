@@ -83,7 +83,7 @@ const AboutUs = () => {
 
         <TeamSection/>
 
-        <Footer/>
+        
       </div>
     </>
   );
