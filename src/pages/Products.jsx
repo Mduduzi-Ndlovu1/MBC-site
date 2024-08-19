@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import './ProductPage.css';
 import { productCategories } from '../utils';
+import Button from '../components/Button';
 
 const Products = () => {
-  // Initialize state with default values
   const [selectedCategory, setSelectedCategory] = useState("Force Flue");
   const [selectedSubCategory, setSelectedSubCategory] = useState(null);
+  const navigate = useNavigate(); // Initialize useNavigate
 
-  // Find the default subcategory for "Force Flue" on initial render
   useEffect(() => {
     const defaultCategoryData = productCategories.find(cat => cat.id === selectedCategory);
     if (defaultCategoryData) {
@@ -18,18 +19,15 @@ const Products = () => {
     }
   }, [selectedCategory]);
 
-  // Function to handle category selection
   const handleCategoryClick = (categoryId) => {
     setSelectedCategory(categoryId);
-    setSelectedSubCategory(null); // Reset subcategory selection when category changes
+    setSelectedSubCategory(null);
   };
 
-  // Function to handle subcategory selection
   const handleSubCategoryClick = (subCategory) => {
     setSelectedSubCategory(subCategory);
   };
 
-  // Find the selected category's data
   const selectedCategoryData = productCategories.find(cat => cat.id === selectedCategory);
 
   return (
@@ -47,7 +45,6 @@ const Products = () => {
         ))}
       </div>
 
-      {/* Display subcategories based on the selected category */}
       {selectedCategory && selectedCategoryData && (
         <div className='categorySection'>
           <div className='subCategoryList'>
@@ -64,7 +61,6 @@ const Products = () => {
             ))}
           </div>
 
-          {/* Display products based on the selected subcategory */}
           {selectedSubCategory && (
             <div className='productsSection'>
               <h2>Products in {selectedSubCategory.name}</h2>
@@ -72,7 +68,12 @@ const Products = () => {
                 {selectedSubCategory.productImages.map(product => (
                   <div key={product.id} className='product'>
                     <img src={product.img} alt={product.desc} />
-                    <p>{product.desc}</p>
+                    <p className='mb-4 h-[4rem]'>{product.desc}</p>
+                    <Button 
+                      name="Learn More" 
+                      path={`/products/${selectedCategory}/${selectedSubCategory.id}`} 
+                      classname="btn-clear" 
+                    />
                   </div>
                 ))}
               </div>
