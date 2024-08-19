@@ -4,13 +4,15 @@ import Button from '../components/Button';
 import data from '../utils/index';
 import Slider from '../components/Slider';
 import ScrollReveal from 'scrollreveal';
-import '../pages/home.css'
+import '../pages/home.css';
+
 import { BsBox } from "react-icons/bs";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import '../components/Slider.css';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import Footer from '../components/Footer';
 
 
 const Home = React.memo(() => {
@@ -262,6 +264,7 @@ const Home = React.memo(() => {
 
 
       </main>
+      <Footer/>
     </>
   );
 });
