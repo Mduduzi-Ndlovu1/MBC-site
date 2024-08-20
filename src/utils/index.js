@@ -16,26 +16,35 @@ export const navLinks = [
 ];
 
 import { 
-    CE_Low_NOx, 
-    E3B_series, 
-    K3B_series, 
-    K3SB_series, 
-    E5_series, 
-    E3_series, 
-    K3_series, 
-    K3S_series_Silver, 
-    K3S_series_White, 
-    KM5_series, 
-    M7_series, 
-    Z2_series, 
-    T1_series, 
-    T6_series ,
+    CE_Low_NOx,
+    E3B_series,
+    K3B_series,
+    K3SB_series,
+    E5_series,
+    E3_series,
+    K3_series,
+    K3S_series_Silver,
+    K3S_series_White,
+    KM5_series,
+    M7_series,
+    Z2_series,
+    T1_series,
+    T6_series,
     frontImgs,
     headerImgs,
     categoryImages,
     CE_Low_NOx_ContentImgs,
-    
+    E3B_contentImgs,
+    K3B_contentImgs,
+    K3SB_contentImgs,
+    M7_contentImgs,
+    E3_contentImgs,
+    K3_contentImgs,
+    K3S_contentImgs,
+    KM5_contentImgs,
+    Z2_contentImgs
 } from '../assets/Gas water heaters';
+
 
 export const productCategories = [
     {
@@ -61,9 +70,7 @@ export const productCategories = [
                         otherImgs: T1_series
                     }
                 ],
-                featureContent: [
-                    CE_Low_NOx_ContentImgs
-                ]
+                featureContent: CE_Low_NOx_ContentImgs
             },
             {
                 id: "Low Pressure",
@@ -110,7 +117,8 @@ export const productCategories = [
                         colors: ["Gray", "White"],
                         otherImgs: M7_series
                     }
-                ]
+                ],
+                featureContent: M7_contentImgs
             },
             {
                 id: "Digital",
@@ -173,7 +181,8 @@ export const productCategories = [
                         colors: ["White"],
                         otherImgs: E3_series
                     }
-                ]
+                ],
+                featureContent: E3_contentImgs
             },
             {
                 id: "Zero Cold",
@@ -194,7 +203,8 @@ export const productCategories = [
                         colors: ["White", "Silver"],
                         otherImgs: Z2_series
                     }
-                ]
+                ],
+                featureContent: Z2_contentImgs
             }
         ]
     },
@@ -220,7 +230,8 @@ export const productCategories = [
                         colors: ["Silver", "White"],
                         otherImgs: K3SB_series
                     }
-                ]
+                ],
+                featureContent: K3SB_contentImgs
             },
             {
                 id: "CE Low NOx",
@@ -241,7 +252,8 @@ export const productCategories = [
                         colors: ["White", "Gray"],
                         otherImgs: CE_Low_NOx
                     }
-                ]
+                ],
+                featureContent: CE_Low_NOx_ContentImgs
             }
         ]
     },
@@ -272,6 +284,7 @@ export const productCategories = [
         ]
     }
 ];
+
 
 
 

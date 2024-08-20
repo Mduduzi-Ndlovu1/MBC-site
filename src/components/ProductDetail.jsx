@@ -18,8 +18,14 @@ const ProductDetail = () => {
   // Handle state for the main image
   const [mainImage, setMainImage] = useState(product?.img);
 
+  // State for toggling feature sections
+  const [showFeatures, setShowFeatures] = useState(true); // Default to show Features & Performance
+
   // Check if the product is found before accessing images
   const productImageSet = product?.otherImgs ? Object.values(product.otherImgs) : [];
+
+  // Retrieve feature content
+  const featureContent = subCategory?.featureContent || [];
 
   return (
     <>
@@ -48,13 +54,16 @@ const ProductDetail = () => {
             <p>{product?.description}</p>
             
             <h2>Specifications</h2>
-            
+            <table>
+              <tbody>
                 {product?.specifications && Object.entries(product.specifications).map(([key, value], index) => (
                   <tr key={index}>
+                    <td>{key}</td>
                     <td>{value}</td>
                   </tr>
                 ))}
-              
+              </tbody>
+            </table>
 
             <h2>Size</h2>
             <div className='size-options'>
@@ -75,14 +84,33 @@ const ProductDetail = () => {
             </div>
 
             <Button name={"Request Quote"} path={'./contact'} classname={"btn"} />
-            </div>
+          </div>
         </div>
       </section>
 
       <div className='toggle-sections'>
-            <button onClick={() => setShowFeatures(true)} className='toggle-sections-btn'>Features & Performance</button>
-            <button onClick={() => setShowFeatures(false)}className='toggle-sections-btn'>Product Parameters</button>
+        <button onClick={() => setShowFeatures(true)} className='toggle-sections-btn'>Features & Performance</button>
+        <button onClick={() => setShowFeatures(false)} className='toggle-sections-btn'>Product Parameters</button>
       </div>
+
+      {showFeatures && (
+        <section className='features-performance'>
+          {featureContent.map(item => (
+            <div key={item.id} className='feature-item'>
+              <img src={item.imageSrc} alt={item.Heading} />
+              <h3>{item.Heading}</h3>
+              <p>{item.text}</p>
+            </div>
+          ))}
+        </section>
+      )}
+      
+      {!showFeatures && (
+        <section className='product-parameters'>
+          <h2>Product Parameters</h2>
+          {/* Add content or leave it empty as per your requirement */}
+        </section>
+      )}
     </>
   );
 };
