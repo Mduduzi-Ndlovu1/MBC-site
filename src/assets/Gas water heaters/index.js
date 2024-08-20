@@ -286,15 +286,6 @@ import LowNox_CE from './Balance Flue/CE Low NOx/contentImgs/LowNox.jpg';
 import mircoflame_CE from './Balance Flue/CE Low NOx/contentImgs/mircoflame.jpg';
 import Healthy_CE from './Balance Flue/CE Low NOx/contentImgs/Healthy.jpg';
 
-export const CE_Low_NOxContentImgs = [
-    anywhere_CE,
-    diff_CE,
-    header_CE,
-    intergrated_CE,
-    LowNox_CE,
-    mircoflame_CE,
-    Healthy_CE
-]
 
 import anywhere_E3B from './Balance Flue/Digital/E3B series/contentImgs/anywhere.jpg';
 import diff_E3B from './Balance Flue/Digital/E3B series/contentImgs/diff.jpg';
@@ -305,16 +296,6 @@ import liters_E3B from './Balance Flue/Digital/E3B series/contentImgs/liters.jpg
 import mircoflame_E3B from './Balance Flue/Digital/E3B series/contentImgs/Mircoflame.jpg';
 import support_E3B from './Balance Flue/Digital/E3B series/contentImgs/Support.jpg';
 
-export const E3B_contentImgs = [
-    anywhere_E3B,
-    diff_E3B,
-    header_E3B,
-    Healthy_Ofc_E3B,
-    intergrated_E3B,
-    liters_E3B,
-    mircoflame_E3B,
-    support_E3B
-]
 
 import anywhere_K3B from './Balance Flue/Digital/K3B series/contentImgs/anywhere.jpg';
 import diff_K3B from './Balance Flue/Digital/K3B series/contentImgs/diff.jpg';
@@ -322,13 +303,6 @@ import header_K3B from './Balance Flue/Digital/K3B series/contentImgs/header.jpg
 import intergrated_K3B from './Balance Flue/Digital/K3B series/contentImgs/intergrated.jpg';
 import support_K3B from './Balance Flue/Digital/K3B series/contentImgs/support.jpg';
 
-export const K3B_contentImgs = [
-    anywhere_K3B,
-    diff_K3B,
-    header_K3B,
-    intergrated_K3B,
-    support_K3B
-]
 
 import anywhere_K3SB from './Balance Flue/Digital/K3SB series/contentImgs/anywhere.jpg';
 import diff_K3SB from './Balance Flue/Digital/K3SB series/contentImgs/diff.jpg';
@@ -336,15 +310,8 @@ import header_K3SB from './Balance Flue/Digital/K3SB series/contentImgs/header.j
 import header_ofc_K3SB from './Balance Flue/Digital/K3SB series/contentImgs/healthy_ofc.jpg';
 import intergrated_K3SB from './Balance Flue/Digital/K3SB series/contentImgs/intergrated.jpg';
 import support_K3SB from './Balance Flue/Digital/K3SB series/contentImgs/support.jpg';
+import mirco_K3SB from './Balance Flue/Digital/K3SB series/contentImgs/mirco.png';
 
-export const K3SB_contentImgs = [
-    anywhere_K3SB,
-    diff_K3SB,
-    header_K3SB,
-    header_ofc_K3SB,
-    intergrated_K3SB,
-    support_K3SB
-];
 
 import better_M7 from './Force Flue/Mechanical/contentImgs/Better.jpg';
 import each_inch_M7 from './Force Flue/Mechanical/contentImgs/Each Inch img.jpg';
@@ -354,4 +321,419 @@ import Round_angle_img_M7 from './Force Flue/Mechanical/contentImgs/Round angle 
 import self_inspection_img_M7 from './Force Flue/Mechanical/contentImgs/self inspection img.jpg';
 import serious_material_img_M7 from './Force Flue/Mechanical/contentImgs/serious material img.jpg';
 import wind_res_M7 from './Force Flue/Mechanical/contentImgs/Wind resistance chimney img.jpg';
+import header_M7 from './Force Flue/Mechanical/contentImgs/M7 Header.jpg';
+
+
+import header_E3 from './Force Flue/Digital/E3 series/contentImgs/header.jpg';
+import healthy_E3 from './Force Flue/Digital/E3 series/contentImgs/healthy.jpg';
+import liters_E3 from './Force Flue/Digital/E3 series/contentImgs/liters.jpg';
+import precise_E3 from './Force Flue/Digital/E3 series/contentImgs/precise.jpg';
+
+
+import header_K3 from './Force Flue/Digital/K3 series/contentImgs/header.png';
+import cozy_K3 from './Force Flue/Digital/K3 series/contentImgs/cozy.png';
+import healthy_ofc from './Force Flue/Digital/K3 series/contentImgs/healthy_ofc.png';
+import precise_K3 from './Force Flue/Digital/K3 series/contentImgs/precise.png';
+import stable_K3 from './Force Flue/Digital/K3 series/contentImgs/stable.png';
+
+
+import header_K3S_ from './Force Flue/Digital/K3S series/contentImgs/K3S header.jpg';
+import efficient_K3s from './Force Flue/Digital/K3S series/contentImgs/Efficient heat.png';
+import precise_K3s from './Force Flue/Digital/K3S series/contentImgs/Precise.png';
+
+
+
+import header_KM5 from './Force Flue/Digital/KM5 series/contentImgs/header.png';
+import conquer_KM5 from './Force Flue/Digital/KM5 series/contentImgs/conquer.png';
+import eco_KM5 from './Force Flue/Digital/KM5 series/contentImgs/eco.png';
+import efficient_KM5 from './Force Flue/Digital/KM5 series/contentImgs/efficient .png';
+import sudden_KM5 from './Force Flue/Digital/KM5 series/contentImgs/sudden.png';
+
+
+import fourBac_Z2 from './Force Flue/Zero cold/contentImgs/Four bac.png';
+import inverter_Z2 from './Force Flue/Zero cold/contentImgs/Inverter DC booster.png';
+import mutiple_Z2 from './Force Flue/Zero cold/contentImgs/Mutiple safe.png';
+import header_Z2 from './Force Flue/Zero cold/contentImgs/header.png';
+import constant_Z2 from './Force Flue/Zero cold/contentImgs/constant.png'
+import precise_Z2 from './Force Flue/Zero cold/contentImgs/precise.png'
+
+export const CE_Low_NOx_ContentImgs = [
+    {
+        id:"header",
+        imageSrc: header_CE,
+        Heading: "Close chamber, safe indoor indoor installation",
+        text:""
+    },
+    {
+        id:"LowNox",
+        imageSrc: LowNox_CE,
+        Heading: "Low NOx emission for European market requirement",
+        text:""
+    },
+    {
+        id:"diff",
+        imageSrc: diff_CE,
+        Heading: "Wish to install in bathroom?",
+        text:"Balance flue would be a good choice."
+    },
+    {
+        id:"intergrated",
+        imageSrc: intergrated_CE,
+        Heading: "Integrated smoke exhaust and air intake flue",
+        text:""
+    },
+    {
+        id:"anywhere",
+        imageSrc: anywhere_CE,
+        Heading: "Anywhere and any places",
+        text:""
+    },
+    {
+        id:"mirco",
+        imageSrc: mircoflame_CE,
+        Heading: "Micro flame control, bringing cool experience in summer",
+        text:"Adopting micro flame technology, working at minimum power in hot summer."
+    },
+    {
+        id:"healthy",
+        imageSrc: Healthy_CE,
+        Heading: "Healthy OFC heat exchanger,caring more about hygiene of water",
+        text:"High purity of OFC heat exchanger, having higher heat efficiency and bacteriostat effect."
+    }
+    
+]
+export const E3B_contentImgs = [
+    {
+        id:"header",
+        imageSrc:header_E3B,
+        Heading: "Close chamber, safe indoor indoor installation",
+        text:""
+    },
+    {
+        id:"anywhere",
+        imageSrc:anywhere_E3B,
+        Heading: "Anywhere and everywhere",
+        text:""
+    },
+    {
+        id:"diff",
+        imageSrc:diff_E3B,
+        Heading: "Wish to install in bathroom?",
+        text:"Balance flue would be a good choice."
+    },
+    {
+        id:"intergrated",
+        imageSrc:intergrated_E3B,
+        Heading: "Integrated smoke exhaust and air intake flue",
+        text:""
+    },
+    {
+        id:"liters",
+        imageSrc:liters_E3B,
+        Heading: "30L/min super big capacity",
+        text:"Sufficient hot water, enable to supply multiple terminals."
+    },
+    {
+        id:"mirco",
+        imageSrc:mircoflame_E3B,
+        Heading: "Micro flame control, bringing cool experience in summer",
+        text:"Adopting micro flame technology, working at minimum power in hot summer."
+    },
+    {
+        id:"healthy",
+        imageSrc:Healthy_Ofc_E3B,
+        Heading: "Healthy OFC heat exchanger,caring more about hygiene of water",
+        text:"High purity of OFC heat exchanger, having higher heat efficiency and bacteriostat effect."
+    },
+    {
+        id:"support",
+        imageSrc:support_E3B,
+        Heading: "Smart digital control",
+        text:"MBC E3B series gas water heater"
+    }
+]
+export const K3B_contentImgs = [
+    {
+        id:"header",
+        imageSrc:header_K3B,
+        Heading: "Close chamber, safe indoor indoor installation",
+        text:""
+    },
+    {
+        id:"anywhere",
+        imageSrc:anywhere_K3B,
+        Heading: "Anywhere and everywhere",
+        text:""
+    },
+    {
+        id:"diff",
+        imageSrc:diff_K3B,
+        Heading: "Wish to install in bathroom?",
+        text:"Balance flue would be a good choice."
+    },
+    {
+        id:"intergrated",
+        imageSrc:intergrated_K3B,
+        Heading: "Integrated with 3 core control components",
+        text:""
+    },
+    {
+        id:"support",
+        imageSrc:support_K3B,
+        Heading: "Support low water pressure starting, friendly to high floor residence",
+        text:"0.02MPa activating, stable running even in high floor or high altitude."
+    }
+]
+export const K3SB_contentImgs = [
+    {
+        id:"header",
+        imageSrc:header_K3SB,
+        Heading: "Close chamber, safe indoor indoor installation",
+        text:""
+    },
+    {
+        id:"diff",
+        imageSrc:diff_K3SB,
+        Heading: "Wish to install in bathroom?",
+        text:"Balance flue would be a good choice."
+    },
+    {
+        id:"intergrated",
+        imageSrc:intergrated_K3SB,
+        Heading: "Integrated smoke exhaust and air intake flue",
+        text:""
+    },
+    {
+        id:"anywhere",
+        imageSrc:anywhere_K3SB,
+        Heading: "Anywhere and everywhere",
+        text:""
+    },
+    {
+        id:"mirco",
+        imageSrc:mirco_K3SB,
+        Heading: "Micro flame control, bringing cool experience in summer",
+        text:"Adopting micro flame technology, working at minimum power in hot summer."
+    },
+    {
+        id:"healthy",
+        imageSrc:header_ofc_K3SB,
+        Heading: "Healthy OFC heat exchanger,caring more about hygiene of water",
+        text:"High purity of OFC heat exchanger, having higher heat efficiency and bacteriostat effect."
+    },
+    {
+        id:"support",
+        imageSrc:support_K3SB,
+        Heading: "Support low water pressure starting, friendly to high floor residence",
+        text:"0.02MPa activating, stable running even in high floor or high altitude."
+    }
+];
+export const M7_contentImgs = [
+    {
+        id:"header",
+        imageSrc: header_M7,
+        Heading: "Smart mechanical control",
+        text:"MBC M7 series gas water heater"
+    },
+    {
+        id:"High",
+        imageSrc:high_Quality_img_M7,
+        Heading: "High quality copper core motor",
+        text:""
+    },
+    {
+        id:"better",
+        imageSrc:better_M7,
+        Heading: "Better energy saving",
+        text:""
+    },
+    {
+        id:"inspection",
+        imageSrc:self_inspection_img_M7,
+        Heading: "The heater will do the self-inspection every time before running.",
+        text:""
+    },
+    {
+        id:"high_heat",
+        imageSrc:high_heat_M7,
+        Heading: "High heat exhanging technology",
+        text:""
+    },
+    {
+        id:"each_inch",
+        imageSrc:each_inch_M7,
+        Heading: "Each inch of water temperature control",
+        text:""
+    },
+    {
+        id:"Wind",
+        imageSrc:wind_res_M7,
+        Heading: "Wind resistance chimney",
+        text:""
+    },
+    {
+        id:"serious",
+        imageSrc:serious_material_img_M7,
+        Heading: "Take seriously on component materials",
+        text:""
+    },
+    {
+        id:"Round",
+        imageSrc:Round_angle_img_M7,
+        Heading: "Round angle design",
+        text:""
+    }
+]
+export const E3_contentImgs =[
+    {
+        id:"header",
+        imageSrc: header_E3,
+        Heading: "Smart digital control",
+        text:"MBC E3 series gas water heater"
+    },
+    {
+        id:"precise",
+        imageSrc:precise_E3,
+        Heading: "Precise temperature control 4.0, enjoy stable hot water",
+        text:"Integrated with 3 core control components, realize optimal gas and water match, precisely static and dynamic control, keep hot water always stable."
+    },
+    {
+        id:"healthy",
+        imageSrc:healthy_E3,
+        Heading: "Healthy OFC heat exchanger,caring more about hygiene of water",
+        text: "High purity of OFC heat exchanger, having higher heat efficiency and bacteriostat effect."
+    },
+    {
+        id:"liters",
+        imageSrc:liters_E3,
+        Heading: "30L/min super big capacity",
+        text:"Sufficient hot water, enable to supply multiple terminals."
+    }
+]
+export const K3_contentImgs = [
+    {
+        id:"header",
+        imageSrc: header_K3,
+        Heading: "Smart digital control",
+        text:"MBC K3 series gas water heater"
+    },
+    {
+        id:"precise",
+        imageSrc:precise_K3,
+        Heading: "Precise temperature control",
+        text:"Integrated with 3 core control components, realize optimal gas and water match, precisely static and dynamic control, keep hot water always stable."
+    },
+    {
+        id:"stable",
+        imageSrc:stable_K3,
+        Heading: "Stable water temperature, between turn off and on",
+        text: ""
+    },
+    {
+        id:"cozy",
+        imageSrc:cozy_K3,
+        Heading: "Cozy bathtub mode",
+        text:"Special bathtub mode, realize easily fill bathtub with satisfied hot water, enjoy more fun in bathe."
+    },
+    {
+        id:"healthy",
+        imageSrc:healthy_ofc,
+        Heading: "Healthy OFC heat exchanger,caring more about hygiene of water",
+        text:"High purity of OFC heat exchanger, having higher heat efficiency and bacteriostat effect."
+    }
+]
+export const K3S_contentImgs = [
+    {
+        id:"header",
+        imageSrc: header_K3S_,
+        Heading: "Smart digital control",
+        text:"Macro K3S series gas water heater"
+    },
+    {
+        id:"precise",
+        imageSrc: precise_K3s,
+        Heading: "Precise temperature control",
+        text:"Integrated with 3 core control components, realize optimal gas and water match, precisely static and dynamic control, keep hot water always stable."
+    },
+    {
+        id:"efficient",
+        imageSrc: efficient_K3s,
+        Heading: "Healthy OFC heat exchanger,caring more about hygiene of water",
+        text: "High purity of OFC heat exchanger, having higher heat efficiency and bacteriostat effect."
+    }
+
+]
+export const KM5_contentImgs = [
+    {
+        id:"header",
+        imageSrc: header_KM5,
+        Heading: "Conquer the elegance of time with warm starlight white",
+        text:"The 3-sided integrated forming unit is simple and concise with generosity and firmness.The concave smart temperature screen seems to be a bright pearl embedded in a white ocean."
+    },
+    {
+        id:"conquer",
+        imageSrc: conquer_KM5,
+        Heading: "Conquer the elegance of time with warm starlight white",
+        text:"Conquer the elegance of time with warm starlight white The 3-sided integrated forming unit is simple and concise with generosity and firmness.The concave smart temperature screen seems to be a bright pearl embedded in a white ocean. Conquer the elegance of time with warm starlight white In the gentle starry white sky, one can appreciate the poetic beauty of daily life and appreciate the comfort and elegance of bathing, which is white and flawless. The 3-sided integrated forming unit is simple and concise with generosity and firmness. The concave smart temperature screen seems to be a bright pearl embedded in a white ocean."
+    },
+    {
+        id:"eco",
+        imageSrc: eco_KM5,
+        Heading: "ECO efficient energy saving Family fund can be saved with one key only",
+        text:"Start ECO smart energy saving mode, and the machine will run automatically according to the energy saving heat load. There is no need to adjust water temperature repeatedly, which may lead to a waste of water and gas. It will save gas, water and your energy."
+    },
+    {
+        id:"efficient",
+        imageSrc: efficient_KM5,
+        Heading: "Efficient heat exchange, corrosion resistance and antibacterial activity Healthy in washing with oxygen free copper water tanks",
+        text:"Oxygen-free copper water tank with oxidation resistance, high thermal conductivity, long service life, and durability 99.9% antibacterial rate, without harmful substances generated after heating, with clean water and healthy skin."
+    },
+    {
+        id:"sudden",
+        imageSrc: sudden_KM5,
+        Heading: "Sudden heat exchange, corrosion resistance and antibacterial activity Healthy in washing with oxygen free copper water tanks",
+        text: "Oxygen-free copper water tank with oxidation resistance, high thermal conductivity, long service life, and durability 99.9% antibacterial rate, without harmful substances generated after heating, with clean water and healthy skin."
+    }
+]
+export const Z2_contentImgs = [
+    {
+        id:"header",
+        imageSrc: header_Z2,
+        Heading: "Zero Cold Constant Temperature",
+        text:"MBC Z2 zero cold gas water heater"
+    },
+    {
+        id:"constant",
+        imageSrc: constant_Z2,
+        Heading: "Constant zero cold",
+        text:"Comfortable hot water, come at once."
+    },
+    {
+        id:"precise",
+        imageSrc: precise_Z2,
+        Heading: "Constant zero coldComfortable hot water, come at once. Precise temperature control. Always stable, always constant.",
+        text:"Sensible temperature probe, water temperature change only within ±1℃, make you feel cozy all the time."
+    },
+    {
+        id:"inverter",
+        imageSrc: inverter_Z2,
+        Heading: "Inverter DC booster pump,constant stable big flow",
+        text:"Adopting inverter pump, 11m lift, 120m circulating distance, big flow hot water."
+    },
+    {
+        id:"four",
+        imageSrc: fourBac_Z2,
+        Heading: "Four bacteriostat measure",
+        text:"reach 99.9% bacteriostat rate."
+    },
+    {
+        id:"multiple",
+        imageSrc: mutiple_Z2,
+        Heading: "Multiple safe protection",
+        text:""
+    },
+    
+]
+
+
 

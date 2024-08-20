@@ -33,6 +33,7 @@ import {
     frontImgs,
     headerImgs,
     categoryImages,
+    CE_Low_NOx_ContentImgs,
     
 } from '../assets/Gas water heaters';
 
@@ -59,6 +60,9 @@ export const productCategories = [
                         colors: ["White", "Silver"],
                         otherImgs: T1_series
                     }
+                ],
+                featureContent: [
+                    CE_Low_NOx_ContentImgs
                 ]
             },
             {
