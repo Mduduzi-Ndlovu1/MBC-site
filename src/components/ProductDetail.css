@@ -1,117 +1,149 @@
 .product-detail {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .product-detail-container {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .product-image-gallery {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .main-image img {
-    width: 80%;
-    height: auto;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-  }
-  
-  .thumbnail-images {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .thumbnail {
-    width: 60px; /* Set the desired width */
-    height: 60px; /* Set the desired height */
-    object-fit: cover; /* Ensure the image covers the thumbnail area */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    border-radius: 4px; /* Optional: add rounded corners */
-    transition: transform 0.2s ease-in-out; /* Add a smooth transition effect */
-  }
-  
-  .thumbnail:hover {
-    transform: scale(1.1); /* Slightly enlarge thumbnail on hover */
-  }
-  
-  .product-info {
-    flex: 1;
-  }
-  
-  .product-info h1 {
-    font-size: 2rem;
-    font-weight: 800;
-    margin-bottom: 10px;
-  }
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-  .product-info h2 {
-    font-size: 1rem;
-    font-weight: 600;
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
-    border-bottom: 1px solid rgba(245, 245, 245, 0.253);
-  }
-  
-  .product-info p {
-    font-size: 0.75rem;
-    margin-bottom: 20px;
-  }
-  
-  .product-info table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 1rem;
-  }
-  
-  .product-info table, th, td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: left;
-  }
-  
-  .product-info .add-to-cart {
-    padding: 10px 20px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    margin-top: 20px;
-  }
-  
-  .product-info .add-to-cart:hover {
-    background-color: #218838;
-  }
+.product-detail-container {
+  display: flex;
+  gap: 20px;
+}
 
-  .size-options, .color-options {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
-    margin-bottom: 1rem;
-  }
-  
-  .size-box, .color-box {
-    padding: 10px;
-    border: 1px solid #1c3c46;
-    border-radius: 5px;
-    text-align: center;
-    cursor: pointer;
-  }
-  
-  .size-box {
-    width: 50px;
-  }
-  
-  .color-box {
-    width: 100px;
-  }
-  
-  
+.product-image-gallery {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main-image img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.thumbnail-images {
+  display: flex;
+  gap: 10px;
+}
+
+.thumbnail {
+  width: 60px; /* Set the desired width */
+  height: 60px; /* Set the desired height */
+  object-fit: cover; /* Ensure the image covers the thumbnail area */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  border-radius: 4px; /* Optional: add rounded corners */
+  transition: transform 0.2s ease-in-out; /* Add a smooth transition effect */
+}
+
+.thumbnail:hover {
+  transform: scale(1.1); /* Slightly enlarge thumbnail on hover */
+}
+
+.product-info {
+  flex: 1;
+}
+
+.product-info h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.product-info h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(245, 245, 245, 0.253);
+}
+
+.product-info p {
+  font-size: 0.75rem;
+  margin-bottom: 20px;
+}
+
+.product-info .add-to-cart {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+.product-info .add-to-cart:hover {
+  background-color: #218838;
+}
+
+.size-options, .color-options {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 1rem;
+}
+
+.size-box, .color-box {
+  padding: 10px;
+  border: 1px solid #1c3c46;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.size-box {
+  width: 50px;
+}
+
+.color-box {
+  width: 100px;
+}
+
+.dynamic-section {
+  margin-top: 2rem;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+.tabs span {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-bottom: 2px solid transparent;
+}
+
+.tabs .active {
+  border-bottom: 2px solid #000;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.header img {
+  width: 50px;
+  height: 50px;
+  margin-right: 1rem;
+}
+
+.feature-content, .parameter-content {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.feature-content .feature-text, .parameter-content .parameter-text {
+  flex: 1;
+}
+
+.feature-content .feature-image img, .parameter-content .parameter-image img {
+  width: 100px;
+  height: 100px;
+}
