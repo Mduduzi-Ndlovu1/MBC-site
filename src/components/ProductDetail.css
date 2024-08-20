@@ -17,7 +17,7 @@
   }
   
   .main-image img {
-    width: 100%;
+    width: 80%;
     height: auto;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -28,13 +28,17 @@
     gap: 10px;
   }
   
-  .thumbnail-images img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    cursor: pointer;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+  .thumbnail {
+    width: 60px; /* Set the desired width */
+    height: 60px; /* Set the desired height */
+    object-fit: cover; /* Ensure the image covers the thumbnail area */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border-radius: 4px; /* Optional: add rounded corners */
+    transition: transform 0.2s ease-in-out; /* Add a smooth transition effect */
+  }
+  
+  .thumbnail:hover {
+    transform: scale(1.1); /* Slightly enlarge thumbnail on hover */
   }
   
   .product-info {
@@ -43,16 +47,27 @@
   
   .product-info h1 {
     font-size: 2rem;
+    font-weight: 800;
     margin-bottom: 10px;
+  }
+
+  .product-info h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgba(245, 245, 245, 0.253);
   }
   
   .product-info p {
+    font-size: 0.75rem;
     margin-bottom: 20px;
   }
   
   .product-info table {
     width: 100%;
     border-collapse: collapse;
+    margin-bottom: 1rem;
   }
   
   .product-info table, th, td {
@@ -75,4 +90,28 @@
   .product-info .add-to-cart:hover {
     background-color: #218838;
   }
+
+  .size-options, .color-options {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .size-box, .color-box {
+    padding: 10px;
+    border: 1px solid #1c3c46;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .size-box {
+    width: 50px;
+  }
+  
+  .color-box {
+    width: 100px;
+  }
+  
   

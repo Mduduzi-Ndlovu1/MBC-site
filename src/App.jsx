@@ -10,7 +10,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
+  <>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -19,7 +19,7 @@ function App() {
         <Route path="/products/:categoryId/:subCategoryId" element={<ProductDetail />} /> {/* Add route for ProductDetail */}
       </Routes>
       <Footer />
-    </Router>
+    </>
   );
 }
 
