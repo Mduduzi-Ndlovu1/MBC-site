@@ -147,3 +147,25 @@
   width: 100px;
   height: 100px;
 }
+
+.toggle-sections {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  background-color: #1c3c4686;
+  padding: 1rem;
+}
+
+.toggle-sections-btn {
+  font-size: 1rem;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.toggle-sections-btn:hover {
+  border-bottom: #fff 1px solid;
+}

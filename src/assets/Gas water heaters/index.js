@@ -278,3 +278,80 @@ export const categoryImages = [
     
 ]
 
+import anywhere_CE from './Balance Flue/CE Low NOx/contentImgs/anywhere.jpg';
+import diff_CE from './Balance Flue/CE Low NOx/contentImgs/diff.jpg';
+import header_CE from './Balance Flue/CE Low NOx/contentImgs/header.jpg';
+import intergrated_CE from './Balance Flue/CE Low NOx/contentImgs/intergrated.jpg';
+import LowNox_CE from './Balance Flue/CE Low NOx/contentImgs/LowNox.jpg';
+import mircoflame_CE from './Balance Flue/CE Low NOx/contentImgs/mircoflame.jpg';
+import Healthy_CE from './Balance Flue/CE Low NOx/contentImgs/Healthy.jpg';
+
+export const CE_Low_NOxContentImgs = [
+    anywhere_CE,
+    diff_CE,
+    header_CE,
+    intergrated_CE,
+    LowNox_CE,
+    mircoflame_CE,
+    Healthy_CE
+]
+
+import anywhere_E3B from './Balance Flue/Digital/E3B series/contentImgs/anywhere.jpg';
+import diff_E3B from './Balance Flue/Digital/E3B series/contentImgs/diff.jpg';
+import header_E3B from './Balance Flue/Digital/E3B series/contentImgs/Header.jpg';
+import Healthy_Ofc_E3B from './Balance Flue/Digital/E3B series/contentImgs/Healthy OFc.jpg';
+import intergrated_E3B from './Balance Flue/Digital/E3B series/contentImgs/intergrated.jpg';
+import liters_E3B from './Balance Flue/Digital/E3B series/contentImgs/liters.jpg';
+import mircoflame_E3B from './Balance Flue/Digital/E3B series/contentImgs/Mircoflame.jpg';
+import support_E3B from './Balance Flue/Digital/E3B series/contentImgs/Support.jpg';
+
+export const E3B_contentImgs = [
+    anywhere_E3B,
+    diff_E3B,
+    header_E3B,
+    Healthy_Ofc_E3B,
+    intergrated_E3B,
+    liters_E3B,
+    mircoflame_E3B,
+    support_E3B
+]
+
+import anywhere_K3B from './Balance Flue/Digital/K3B series/contentImgs/anywhere.jpg';
+import diff_K3B from './Balance Flue/Digital/K3B series/contentImgs/diff.jpg';
+import header_K3B from './Balance Flue/Digital/K3B series/contentImgs/header.jpg';
+import intergrated_K3B from './Balance Flue/Digital/K3B series/contentImgs/intergrated.jpg';
+import support_K3B from './Balance Flue/Digital/K3B series/contentImgs/support.jpg';
+
+export const K3B_contentImgs = [
+    anywhere_K3B,
+    diff_K3B,
+    header_K3B,
+    intergrated_K3B,
+    support_K3B
+]
+
+import anywhere_K3SB from './Balance Flue/Digital/K3SB series/contentImgs/anywhere.jpg';
+import diff_K3SB from './Balance Flue/Digital/K3SB series/contentImgs/diff.jpg';
+import header_K3SB from './Balance Flue/Digital/K3SB series/contentImgs/header.jpg';
+import header_ofc_K3SB from './Balance Flue/Digital/K3SB series/contentImgs/healthy_ofc.jpg';
+import intergrated_K3SB from './Balance Flue/Digital/K3SB series/contentImgs/intergrated.jpg';
+import support_K3SB from './Balance Flue/Digital/K3SB series/contentImgs/support.jpg';
+
+export const K3SB_contentImgs = [
+    anywhere_K3SB,
+    diff_K3SB,
+    header_K3SB,
+    header_ofc_K3SB,
+    intergrated_K3SB,
+    support_K3SB
+];
+
+import better_M7 from './Force Flue/Mechanical/contentImgs/Better.jpg';
+import each_inch_M7 from './Force Flue/Mechanical/contentImgs/Each Inch img.jpg';
+import high_heat_M7 from './Force Flue/Mechanical/contentImgs/High heat exhanging technology.jpg';
+import high_Quality_img_M7 from './Force Flue/Mechanical/contentImgs/High Quality img.jpg';
+import Round_angle_img_M7 from './Force Flue/Mechanical/contentImgs/Round angle img.jpg';
+import self_inspection_img_M7 from './Force Flue/Mechanical/contentImgs/self inspection img.jpg';
+import serious_material_img_M7 from './Force Flue/Mechanical/contentImgs/serious material img.jpg';
+import wind_res_M7 from './Force Flue/Mechanical/contentImgs/Wind resistance chimney img.jpg';
+
