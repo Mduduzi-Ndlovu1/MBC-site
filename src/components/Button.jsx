@@ -1,11 +1,27 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Button = ({ name, path, classname, onClick }) => {
+  const navigate = useNavigate();
+
+  const handleClick = (e) => {
+    if (path) {
+      
+      navigate(path);
+    }
+    if (onClick) {
+      onClick();
+    }
+  };
+
   return (
-    <button className={classname} onClick={onClick}>
-      {path ? <Link to={path}>{name}</Link> : name}
-    </button>
+    <a
+      href={path || '#'}
+      className={classname}
+      onClick={handleClick}
+    >
+      {name}
+    </a>
   );
 };
 

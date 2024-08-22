@@ -1,24 +1,21 @@
+/* Base styles for mobile and small screens */
 .productCategory {
     margin-top: 5.5rem;
     margin-bottom: 1rem;
     display: flex;
-    gap: 20px;
-    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
 }
 
 .product_category_btn {
-    padding: 15px;
+    padding: 10px;
     background-color: rgb(1, 41, 53);
     border-radius: 6px;
     transition: all .3s ease-in-out;
 }
 
-.product_category_btn:hover {
-    background-color: white;
-    color: black;
-    border: whitesmoke 1px solid;
-}
-
+.product_category_btn:hover,
 .product_category_btn.active {
     background-color: white;
     color: black;
@@ -38,14 +35,15 @@
 /* Container for subcategory list */
 .subCategoryList {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 20px;
+    align-items: center;
 }
 
 /* Style for subcategory section */
 .subCategory {
-    margin-bottom: 40px;
     transition: all .1s ease;
+    text-align: center;
 }
 
 .subCategory:hover {
@@ -53,23 +51,21 @@
 }
 
 .subCategory h3 {
-    font-size: 24px;
+    font-size: 20px;
     color: #e2e2e2;
     margin-bottom: 10px;
-    text-align: center;
 }
 
 .subCategory img {
-    width: 200px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
-    height: 200px;
     margin-bottom: 20px;
 }
 
 /* Container for the products section */
 .productsSection {
     margin-top: 30px;
-    
 }
 
 .productsSection h2 {
@@ -80,18 +76,19 @@
 /* Container for individual products */
 .products {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     gap: 20px;
 }
 
 /* Style for each product item */
 .product {
-    padding: 15px;
+    padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
     text-align: center;
-    width: 200px;
+    width: 100%;
+    max-width: 300px;
     transition: transform 0.3s ease;
 }
 
@@ -106,7 +103,81 @@
     color: #555;
 }
 
-/* Hover effect for products */
 .product:hover {
     transform: scale(1.05);
+}
+
+/* Media queries for larger screens */
+@media(min-width: 600px) {
+    .productCategory {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .product_category_btn {
+        padding: 15px;
+    }
+
+    .subCategoryList {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .subCategory img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .products {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .product {
+        width: 200px;
+    }
+}
+
+@media(min-width: 768px) {
+    .productCategory {
+        justify-content: center;
+    }
+}
+
+@media(min-width: 1024px) {
+    .productCategory {
+        gap: 30px;
+    }
+
+    .product_category_btn {
+        padding: 20px;
+    }
+
+    .subCategory img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .product {
+        width: 220px;
+    }
+}
+
+@media(min-width: 1440px) {
+    .productCategory {
+        gap: 40px;
+    }
+
+    .product_category_btn {
+        padding: 25px;
+    }
+
+    .subCategory img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .product {
+        width: 240px;
+    }
 }

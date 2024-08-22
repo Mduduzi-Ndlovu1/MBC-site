@@ -47,7 +47,11 @@ import {
     K3_contentImgs,
     K3S_contentImgs,
     KM5_contentImgs,
-    Z2_contentImgs
+    Z2_contentImgs,
+    theLogo,
+    thelogoBack,
+    themission,
+    thevission
 } from '../assets/Gas water heaters';
 
 
@@ -612,7 +616,11 @@ export default {
     gasWaterHeaters,
     frontImgs,
     headerImgs,
-    categoryImages
+    categoryImages,
+    theLogo,
+    thelogoBack,
+    themission,
+    thevission
 
 }
 export { frontImgs, headerImgs, categoryImages };

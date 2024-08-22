@@ -1,9 +1,9 @@
 import React, { useState, useEffect, memo } from 'react';
-import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import data from '../utils';
 import Button from './Button';
 import ScrollReveal from 'scrollreveal';
+import { theLogo } from '../assets/Gas water heaters';
 
 const Navbar = memo(() => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,21 +26,27 @@ const Navbar = memo(() => {
   return (
     <nav className="navbar_container reveal">
       <div className="nav_logo reveal">
-        <Link to="/" aria-label="Home">
+        <a href="/" aria-label="Home">
           <img 
-            src="src/assets/logo/Logo_Black-removebg-preview.png" 
+            src={theLogo} 
             alt="Company Logo" 
             width="160" 
             height="100" 
             loading="lazy" 
           />
-        </Link>
+        </a>
       </div>
       <div className={`nav_links ${isOpen ? 'open' : ''} reveal`}>
         {data.navLinks.map((link) => (
-          <Link key={link.name} to={link.path} className="link" onClick={toggleMenu}>
+          <a 
+            key={link.name} 
+            href={link.path} 
+            className="link" 
+            onClick={() => setIsOpen(false)} // Close menu on link click
+            aria-label={link.name}
+          >
             {link.name}
-          </Link>
+          </a>
         ))}
       </div>
       <div className="reveal hidden md:block">

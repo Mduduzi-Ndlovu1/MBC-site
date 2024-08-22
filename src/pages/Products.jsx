@@ -32,7 +32,7 @@ const Products = () => {
 
   return (
     <>
-      <Navbar />
+      
       <div className='productCategory'>
         {productCategories.map(category => (
           <button
@@ -62,13 +62,13 @@ const Products = () => {
           </div>
 
           {selectedSubCategory && (
-            <div className='productsSection'>
+            <div className='productsSection mb-[2rem] p'>
               <h2>Products in {selectedSubCategory.name}</h2>
-              <div className='products'>
+              <div className='products '>
                 {selectedSubCategory.productImages.map(product => (
-                  <div key={product.id} className='product'>
+                  <div key={product.id} className='product p-4'>
                     <img src={product.img} alt={product.desc} />
-                    <p className='mb-4 h-[4rem]'>{product.desc}</p>
+                    <p className='mb-2 h-[4rem]'>{product.desc}</p>
                     <Button 
                       name="Learn More" 
                       path={`/products/${selectedCategory}/${selectedSubCategory.id}`} 

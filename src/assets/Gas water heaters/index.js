@@ -796,5 +796,13 @@ export const E5_contentImgs = [
     }
 ]
 
+import logo from '../logo/Logo_Black-removebg-preview.png'
+import logoBack from '../logo/logo bg-stuff.jpg';
+import mission from '../logo/mission.jpg'
+import vission from '../logo/vission.jpg'
 
+export const theLogo = logo
+export const thelogoBack = logoBack
+export const themission = mission
+export const thevission = vission
 

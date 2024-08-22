@@ -4,12 +4,13 @@ import './AboutUs.css';
 import Button from '../components/Button';
 import TeamSection from '../components/TeamSection';
 import Footer from '../components/Footer';
+import { themission, thevission } from '../assets/Gas water heaters';
 
 const AboutUs = () => {
   
   return (
     <>
-      <Navbar />
+     
       <div className="about-us-container">
         <section className="intro-section reveal">
           <h2 className='text-center reveal'>Welcome to Montle Business Consulting <span className="highlight">(MBC)</span> cc</h2>
@@ -43,19 +44,19 @@ const AboutUs = () => {
               </p>
 
               <div className="hero-buttons reveal">
-                <Button name="Request Quote" classname="btn" path="./contact" />
+                <Button name="Request Quote" classname="btn" path="/contact" />
               </div>
               
             </div>
           </div>
           <div className="hero-image-container reveal">
-            <img src="src\assets\mission.jpg" alt="Hero" className="hero-image reveal" />
+            <img src={themission} alt="Hero" className="hero-image reveal" />
           </div>
         </section>
         
         <section className="hero">
         <div className="hero-image-container">
-            <img src="src\assets\vission.jpg" alt="Hero" className="hero-image reveal" />
+            <img src={thevission} alt="Hero" className="hero-image reveal" />
           </div>
           <div className="hero-content">
             <div className="hero-text">
@@ -85,7 +86,7 @@ const AboutUs = () => {
 
         
       </div>
-      <Footer/>
+      
     </>
   );
 };

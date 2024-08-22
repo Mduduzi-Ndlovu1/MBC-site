@@ -1,5 +1,4 @@
 import React, { useEffect, useCallback, useState } from 'react';
-import Navbar from '../components/Navbar';
 import Button from '../components/Button';
 import data from '../utils/index';
 import Slider from '../components/Slider';
@@ -13,6 +12,7 @@ import 'swiper/css';
 import '../components/Slider.css';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import Footer from '../components/Footer';
+import { theLogo } from '../assets/Gas water heaters';
 
 
 const Home = React.memo(() => {
@@ -152,7 +152,7 @@ const Home = React.memo(() => {
 
       </div>
       <div className='flex-1 flex justify-center items-center'>
-        <img src="src\assets\logo\logo bg-stuff.jpg" alt="logo" className="image reveal rounded-lg" />
+        <img src={theLogo} alt="logo" className="image reveal rounded-lg" />
       </div>
     </section>
 
@@ -263,7 +263,7 @@ const Home = React.memo(() => {
 
 
       </main>
-      <Footer/>
+      
     </>
   );
 });

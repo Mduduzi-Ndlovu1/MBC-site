@@ -98,7 +98,7 @@
   border: 1px solid #1c3c46;
   border-radius: 5px;
   text-align: center;
-  cursor: pointer;
+  
 }
 
 .size-box {
@@ -109,10 +109,7 @@
   width: 100px;
 }
 
-.size-box:hover, .color-box:hover {
-  border-color: #007bff;
-  background-color: #e9ecef;
-}
+
 
 .dynamic-section {
   margin-top: 2rem;
