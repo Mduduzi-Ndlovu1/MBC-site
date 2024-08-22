@@ -357,6 +357,16 @@ import header_Z2 from './Force Flue/Zero cold/contentImgs/header.png';
 import constant_Z2 from './Force Flue/Zero cold/contentImgs/constant.png'
 import precise_Z2 from './Force Flue/Zero cold/contentImgs/precise.png'
 
+import header_E5 from './External/E5 Series/contentImgs/E5 Header.png';
+import why_E5 from './External/E5 Series/contentImgs/why choose.png';
+import special_E5 from './External/E5 Series/contentImgs/special.jpg';
+import inverter_E5 from './External/E5 Series/contentImgs/Inverter Dc.jpg';
+import six_E5 from './External/E5 Series/contentImgs/Six outdoor.jpg';
+import indoor_E5 from './External/E5 Series/contentImgs/indoor.png';
+import manuel_E5 from './External/E5 Series/contentImgs/manuel.png';
+import strong_E5 from './External/E5 Series/contentImgs/Strong.png';
+
+
 export const CE_Low_NOx_ContentImgs = [
     {
         id:"header",
@@ -733,6 +743,57 @@ export const Z2_contentImgs = [
         text:""
     },
     
+]
+
+export const E5_contentImgs = [
+    {
+        id:"header",
+        imageSrc: header_E5,
+        Heading: "Outdoor installation, comfortable bathing",
+        text:"Macro E5 external gas water heater",
+    },
+    {
+        id:"why",
+        imageSrc: why_E5,
+        Heading: "Why choose the external Gas water heater",
+        text:""
+    },
+    {
+        id:"special",
+        imageSrc: special_E5,
+        Heading: "Special design for outdoor mounting, strengthen outdoor bearin",
+        text:"Enforce outer shell, durably exposing to sun and rain."
+    },
+    {
+        id: "inverter",
+        imageSrc: inverter_E5,
+        Heading: "Inverter DC exhaust system",
+        text:"Strong resistance to gale."
+    },
+    {
+        id:"six",
+        imageSrc: six_E5,
+        Heading: "Six outdoor circumstance",
+        text:"Easily deal with kinds of condition."
+    },
+    {
+        id:"indoor",
+        imageSrc: indoor_E5,
+        Heading: "Indoor operation by wire controller",
+        text:"LED wide display, easily operating and overviewing."
+    },
+    {
+        id: "manuel",
+        imageSrc: manuel_E5,
+        Heading: "Manual and automatic anti-freeze protection",
+        text:"Strengthen bearing in cold area."
+    },
+    {
+        id: "strong",
+        imageSrc: strong_E5,
+        Heading: "Strong driving force",
+        text:"Strengthen power to be activated by small water flow as 0.02MPa."
+    }
 ]
 
 

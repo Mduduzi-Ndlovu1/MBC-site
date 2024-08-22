@@ -44,7 +44,6 @@ const Home = React.memo(() => {
   return (
     <>
       <header className="home_header">
-        <Navbar />
         <div className="w-full flex justify-center text-center items-center mt-8 reveal">
           <div className="w-[90%]">
             <h1 className="text-4xl font-semibold leading-[3.5rem] mb-4 text-gray-300 reveal">

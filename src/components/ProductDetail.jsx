@@ -25,40 +25,41 @@ const ProductDetail = () => {
   const productImageSet = product?.otherImgs ? Object.values(product.otherImgs) : [];
 
   // Retrieve feature content
-  const featureContent = subCategory?.featureContent || [];
+  const featureContent = product?.featureContent || [];
+  const productParameters = product?.productParameters || {};
 
   return (
     <>
-      <Navbar />
-      <section className='product-detail mt-[5rem]'>
-        <div className='product-detail-container'>
-          <div className='product-image-gallery'>
-            <div className='main-image'>
+      
+      <section className='product-detail reveal mt-[5rem]'>
+        <div className='product-detail-container reveal'>
+          <div className='product-image-gallery reveal'>
+            <div className='main-image reveal'>
               <img src={mainImage} alt={product?.desc} />
             </div>
-            <div className='thumbnail-images'>
+            <div className='thumbnail-images reveal'>
               {productImageSet.map((img, index) => (
                 <img
                   key={index}
                   src={img}
                   alt={`${product?.desc} ${index + 1}`}
-                  className='thumbnail'
+                  className='thumbnail reveal'
                   onClick={() => setMainImage(img)} // Update main image on click
                 />
               ))}
             </div>
           </div>
-          <div className='product-info'>
+          <div className='product-info reveal'>
             <h1>{product?.desc}</h1>
             <h2>Product Description:</h2>
             <p>{product?.description}</p>
             
             <h2>Specifications</h2>
-            <table>
+            <table className='specifications-table reveal'>
               <tbody>
                 {product?.specifications && Object.entries(product.specifications).map(([key, value], index) => (
                   <tr key={index}>
-                    <td>{key}</td>
+                    
                     <td>{value}</td>
                   </tr>
                 ))}
@@ -66,49 +67,69 @@ const ProductDetail = () => {
             </table>
 
             <h2>Size</h2>
-            <div className='size-options'>
+            <div className='size-options reveal'>
               {product?.sizes?.map((size, index) => (
-                <div key={index} className='size-box'>
+                <div key={index} className='size-box reveal'>
                   {size}
                 </div>
               ))}
             </div>
 
             <h2>Color</h2>
-            <div className='color-options'>
+            <div className='color-options reveal'>
               {product?.colors?.map((color, index) => (
-                <div key={index} className='color-box'>
+                <div key={index} className='color-box reveal'>
                   {color}
                 </div>
               ))}
             </div>
 
-            <Button name={"Request Quote"} path={'./contact'} classname={"btn"} />
+            <Button name={"Request Quote"} path={'./contact'} classname={"btn reveal"} />
           </div>
         </div>
       </section>
 
-      <div className='toggle-sections'>
-        <button onClick={() => setShowFeatures(true)} className='toggle-sections-btn'>Features & Performance</button>
-        <button onClick={() => setShowFeatures(false)} className='toggle-sections-btn'>Product Parameters</button>
+      <div className='toggle-sections reveal'>
+        <button onClick={() => setShowFeatures(true)} className={`toggle-sections-btn reveal ${showFeatures ? 'active' : ''}`}>Features & Performance</button>
+        <button onClick={() => setShowFeatures(false)} className={`toggle-sections-btn reveal ${!showFeatures ? 'active' : ''}`}>Product Parameters</button>
       </div>
 
       {showFeatures && (
-        <section className='features-performance'>
+        <section className='features-performance reveal'>
           {featureContent.map(item => (
-            <div key={item.id} className='feature-item'>
+            <div key={item.id} className='feature-item reveal'>
               <img src={item.imageSrc} alt={item.Heading} />
-              <h3>{item.Heading}</h3>
-              <p>{item.text}</p>
+              <div>
+                <h3>{item.Heading}</h3>
+                <p>{item.text}</p>
+              </div>
             </div>
           ))}
         </section>
       )}
       
       {!showFeatures && (
-        <section className='product-parameters'>
-          <h2>Product Parameters</h2>
-          {/* Add content or leave it empty as per your requirement */}
+        <section className='product-parameters reveal'>
+          <table className='parameter-table reveal'>
+            <thead>
+              <tr>
+                <th>Model</th>
+                {productParameters.models.map((model, index) => (
+                  <th key={index}>{model}</th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {productParameters.parameters.map((param, index) => (
+                <tr key={index}>
+                  <td>{param.label}</td>
+                  {param.values.map((value, idx) => (
+                    <td key={idx}>{value}</td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </section>
       )}
     </>

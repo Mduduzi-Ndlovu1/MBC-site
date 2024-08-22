@@ -44,12 +44,13 @@ const Navbar = memo(() => {
         ))}
       </div>
       <div className="reveal hidden md:block">
-        <Button name="Request Quote" path="/contact" classname={"btn"} />
+        <Button name="Request Quote" path="/contact" classname="btn" />
       </div>
       <button 
         className="mobile_menu_button md:hidden px-5 reveal" 
         onClick={toggleMenu} 
-        aria-label="Toggle Menu"
+        aria-label={isOpen ? 'Close Menu' : 'Open Menu'}
+        aria-expanded={isOpen}
       >
         {isOpen ? <FaTimes className="menu_icon" /> : <FaBars className="menu_icon" />}
       </button>

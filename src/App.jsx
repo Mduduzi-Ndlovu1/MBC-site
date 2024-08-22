@@ -7,6 +7,7 @@ import Products from './pages/Products';
 import ProductDetail from './components/ProductDetail'; // Import the ProductDetail component
 import Footer from './components/Footer';
 import './App.css';
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/products/:categoryId/:subCategoryId" element={<ProductDetail />} /> {/* Add route for ProductDetail */}
       </Routes>
       <Footer />
